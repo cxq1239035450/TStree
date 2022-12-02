@@ -1,0 +1,34 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.config.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.vitest.json"
+    }
+  ],
+  "compilerOptions":{
+    "target":"esnext",
+    "module":"esnext",
+    "moduleResolution":"node",
+    "strict":true,
+    "allowJs": true,
+    "jsx":"preserve",
+    "sourceMap":true,
+    "resolveJsonModule":true,
+    "esModuleInterop":true,
+    //"skipLibCheck":true,
+    //"allowSyntheticDefaultImports":true,
+    "lib":["esnext","dom"],
+    "allowSyntheticDefaultImports":true,
+    "baseUrl":"./",
+    "paths":{
+    "@/*":["src/*"]
+    }
+    },
+    "include":["src/**/*.ts","src/**/*.d.ts","src/**/*.tsx","src/**/*.vue","src/**/*.js","**/*.ts","**/*.js","**/*.tsx"]
+}
